@@ -1,0 +1,177 @@
+*{
+margin:0 ;
+padding: 0;
+box-sizing: border-box;
+
+background-color: rgba(0, 105, 137, 0.973);
+}
+body {
+  overflow-x: hidden
+}
+
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+
+  #nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .bt {
+    margin: 5px;
+    font-size: 0.9rem;
+  }
+
+  .cel, .not {
+    width: 90%;
+    height: auto;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pe {
+    font-size: 1rem;
+    padding: 20px;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+
+.bt{
+  margin-left: 20px;
+  color: rgb(255, 155, 5);
+  background-color: #524e4e;
+ 
+
+}
+  
+
+#nav{
+  justify-content: center;
+  display: flex; 
+  align-items: center;
+  width: 100%; 
+  height: 7vh; 
+  background-color:#524e4e;
+  cursor: pointer;
+}
+
+.pai{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(2,1fr); 
+  gap: 120px; 
+  margin-top: 120px;
+  place-items: center;
+}
+
+
+
+.cel{
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  align-items: center;
+}
+
+.not{
+  border: 2px solid black;
+  width: 200px; 
+  height: 200px;
+  align-items: center;
+}
+
+img{
+  width: 195px;
+  height: auto;
+}
+
+.logo{
+
+width: 1600px; 
+  height: 200px;
+}
+
+
+
+.pe{
+   justify-content: center;
+  display: flex; 
+  align-items: center;
+  width: 100%; 
+  height: 30vh; 
+  margin-top: 10%;
+background-color: #524e4e;
+
+  font-size: 5vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-align: top ;
+
+  font-style: italic;
+  color: chocolate;
+
+}
+.bte{
+ width: 4%;
+ height: 5vh;
+ background-color: #e3d6d6;
+ border-radius: 110px;
+  margin-left: 30px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.bte .ind{
+
+  width: 5vh;
+  height: 5vh;
+  background-color: chocolate;
+  border-radius: 50%;
+  transform: scale(.9);
+  position: absolute;
+  left: 0;
+  transition: 5s;
+}
+
+
+
+body.escuro  {
+  .pai{
+    background-color: #000000;
+  color: #010101;
+  }
+ 
+}
+
+
+
+body.escuro #nav,
+body.escuro .bt,
+body.escuro .pe,
+body.escuro .bte {
+  background-color: #111;
+  color: #ffa500;
+}
+
+body.escuro .cel,
+body.escuro .not {
+  background-color: #1a1a1a;
+  border-color: #060606;
+}
+
+body.escuro img  {
+  filter: brightness(0.9);
+  background-color: #000000;
+}
+
