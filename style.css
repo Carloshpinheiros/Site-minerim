@@ -9,10 +9,7 @@ body {
   overflow-x: hidden
 }
 
-  .logo {
-    width: 100%;
-    height: auto;
-  }
+
 
   #nav {
     flex-wrap: wrap;
@@ -174,4 +171,5 @@ body.escuro img  {
   filter: brightness(0.9);
   background-color: #000000;
 }
+
 
