@@ -2,84 +2,103 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Colégio São José Escolápias</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f5f5f5;
-    }
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #0066cc;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
     .banner {
-      background-color: #004080;
-      color: yellow;
-      text-align: center;
-      padding: 50px;
-    }
-    .banner h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    .content {
-      padding: 20px;
-      text-align: center;
-    }
-    footer {
-      background-color: #004080;
+      background: url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238') center/cover no-repeat;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 100px 20px;
     }
-    footer a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
+    .banner h1 { font-size: 3rem; font-weight: bold; }
+    .banner p { font-size: 1.5rem; }
+    .section { padding: 60px 20px; }
+    footer { background-color: #004080; color: white; padding: 30px 20px; }
+    footer a { color: #ffd700; margin: 0 10px; text-decoration: none; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Colégio São José Escolápias</h1>
-    <p>80 anos de tradição</p>
-  </header>
 
-  <nav>
-    <a href="#">Educação Infantil</a>
-    <a href="#">Ensino Fundamental</a>
-    <a href="#">Ensino Médio</a>
-    <a href="#">Esporte e Arte</a>
-    <a href="#">Portal do Aluno</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Colégio São José</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Educação Infantil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ensino Fundamental</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ensino Médio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Esporte e Arte</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Portal do Aluno</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
+  <!-- Banner -->
   <div class="banner">
     <h1>Novos Alunos 2026</h1>
-    <p>Faça a sua inscrição</p>
+    <p>Faça a sua inscrição - 80 anos de tradição</p>
+    <button class="btn btn-warning btn-lg mt-3">Inscreva-se Agora</button>
   </div>
 
-  <div class="content">
-    <h2>Bem-vindo ao nosso colégio!</h2>
-    <p>Educação de qualidade, tradição e inovação.</p>
+  <!-- Seções -->
+  <div class="section text-center">
+    <div class="container">
+      <h2>Educação Infantil</h2>
+      <p>Aprendizado lúdico e criativo para os primeiros anos.</p>
+      <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" class="img-fluid rounded" alt="Crianças estudando">
+    </div>
   </div>
 
-  <footer>
+  <div class="section bg-light text-center">
+    <div class="container">
+      <h2>Ensino Fundamental</h2>
+      <p>Formação sólida para o desenvolvimento integral do aluno.</p>
+      <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" class="img-fluid rounded" alt="Alunos em sala de aula">
+    </div>
+  </div>
+
+  <div class="section text-center">
+    <div class="container">
+      <h2>Ensino Médio</h2>
+      <p>Preparação para vestibulares e para a vida.</p>
+      <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b" class="img-fluid rounded" alt="Estudantes do ensino médio">
+    </div>
+  </div>
+
+  <div class="section bg-light text-center">
+    <div class="container">
+      <h2>Professores</h2>
+      <p>Equipe dedicada e apaixonada pelo ensino.</p>
+      <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c" class="img-fluid rounded" alt="Professor ensinando alunos">
+    </div>
+  </div>
+
+  <div class="section text-center">
+    <div class="container">
+      <h2>Robótica</h2>
+      <p>Inovação e tecnologia para preparar os alunos para o futuro.</p>
+      <img src="https://images.unsplash.com/photo-1581090700227-4c4d1a3d3f5c" class="img-fluid rounded" alt="Aula de robótica">
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="text-center">
     <p>Copyright © 2024 Colégio São José Escolápias</p>
     <p>Telefone: (31) 3222-5328 | CNPJ: 22.985.832/0002-28</p>
-    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">WhatsApp</a>
+    <div>
+      <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">WhatsApp</a>
+    </div>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
